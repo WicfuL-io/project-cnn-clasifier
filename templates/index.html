@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="app">
+
+  <header class="header">
+    <img src="{{ url_for('static', filename='hero.png') }}" class="logo">
+    <p class="subtitle">Orchid Classifier</p>
+  </header>
+
+  <section class="card">
+
+    <label class="upload-area">
+      <input type="file" id="file-upload" accept="image/*" hidden>
+      <span id="upload-text">Klik untuk upload gambar anggrek</span>
+      <img id="image-preview" class="hidden">
+    </label>
+
+    <div class="actions">
+      <button class="btn primary" onclick="submitImage()">Prediksi</button>
+      <button class="btn secondary" onclick="clearImage()">Hapus</button>
+    </div>
+
+    <div id="result-box" class="result hidden">
+      <div class="genus" id="pred-result">-</div>
+      <div class="confidence">
+        Confidence: <span id="pred-probability">-</span>%
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <span>© 2026 orchid klasifikasi by Hazrul, Edgar, Nizar, Fitra</span>
+  </footer>
+
+</div>
+
+{% endblock %}

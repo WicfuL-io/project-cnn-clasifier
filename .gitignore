@@ -1,0 +1,20 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Machine Learning
+*.h5
+*.pt
+*.pth
+*.pb
+*.onnx
+
+# Dataset
+data/
+dataset/
+images/
+
+# OS
+.DS_Store
+Thumbs.db

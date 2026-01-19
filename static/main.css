@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f6f9fc, #eef2f7);
+  color: #1f2937;
+  min-height: 100vh;
+}
+
+/* =====================
+   APP LAYOUT
+===================== */
+.app {
+  max-width: 420px;
+  margin: auto;
+  padding: 2rem 1.5rem;
+}
+
+/* =====================
+   HEADER
+===================== */
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  width: 160px;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* =====================
+   CARD
+===================== */
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+/* =====================
+   UPLOAD AREA
+===================== */
+.upload-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #d1d5db;
+  border-radius: 14px;
+  padding: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upload-area:hover {
+  border-color: #2563eb;
+  background: #f8fafc;
+}
+
+#upload-text {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+#image-preview {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* =====================
+   BUTTONS
+===================== */
+.actions {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+}
+
+.btn {
+  flex: 1;
+  padding: 0.6rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 0.2s;
+}
+
+.btn.primary {
+  background: #2563eb;
+  color: white;
+}
+
+.btn.primary:hover {
+  background: #1d4ed8;
+}
+
+.btn.secondary {
+  background: #e5e7eb;
+}
+
+.btn.secondary:hover {
+  background: #d1d5db;
+}
+
+/* =====================
+   RESULT
+===================== */
+.result {
+  margin-top: 1.5rem;
+  text-align: center;
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.genus {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.confidence {
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+/* =====================
+   FOOTER
+===================== */
+.footer {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-top: 2rem;
+}
