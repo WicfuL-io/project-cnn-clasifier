@@ -51,10 +51,12 @@ Jika berhasil, akan muncul `(venv)` pada terminal.
 Jalankan perintah berikut secara berurutan:
 
 ```bash
-pip install scipy==1.9.3
-pip install tensorflow==2.10.11
+python -m pip install --upgrade pip
+pip install flask pillow
+pip install opencv-python==4.7.0.72
+pip install tensorflow==2.10.1
 pip install numpy==1.23.5
-pip install flask pillow opencv-python
+pip install scipy==1.9.3
 ```
 
 > ⚠️ **Catatan:** Versi library dikunci untuk menjaga kompatibilitas dengan TensorFlow 2.10.11.
@@ -64,6 +66,7 @@ pip install flask pillow opencv-python
 ## 🧠 Training Model
 
 Untuk melakukan training model, jalankan:
+sebelum itu jangan lupa melakukan extract zip terlrbih dahulu (dataset.zip)
 
 ```bash
 python train.py
@@ -97,8 +100,14 @@ project-folder/
 │── train.py
 │── app.py
 │── model/
+│   │── (hasil training data)
 │── static/
+│   │── main.js
+│   │── main.css
+│   │── (images logo dan hero)
 │── templates/
+│   │── base.html
+│   │── index.html
 │── README.md
 ```
 

@@ -11,6 +11,7 @@ __pycache__/
 *.onnx
 
 # Dataset
+model/
 data/
 dataset/
 images/
